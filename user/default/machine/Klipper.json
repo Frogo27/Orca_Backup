@@ -38,7 +38,7 @@
         "5000",
         "500"
     ],
-    "machine_start_gcode": "_SP_PRINT_START LANE=[initial_tool] TEMP=[nozzle_temperature_initial_layer]\nM104 S[nozzle_temperature_initial_layer] ; Set nozzle temp\nM140 S[bed_temperature_initial_layer]    ; Set bed temp\nM190 S[bed_temperature_initial_layer] ; Wait for bed to reach temp\n\nSTART_PRINT\nM109 S[nozzle_temperature_initial_layer] ; Wait for hotend to reach temp\nPURGE",
+    "machine_start_gcode": "_SP_PRINT_START LANE=[initial_tool] TEMP=[nozzle_temperature_initial_layer]\nM104 S[nozzle_temperature_initial_layer] ; Set nozzle temp\nM140 S[bed_temperature_initial_layer]    ; Set bed temp\nM190 S[bed_temperature_initial_layer] ; Wait for bed to reach temp\n\nSTART_PRINT\nM109 S[nozzle_temperature_initial_layer] ; Wait for hotend to reach temp\nLINE_PURGE",
     "machine_tool_change_time": "20",
     "manual_filament_change": "0",
     "name": "Klipper",
